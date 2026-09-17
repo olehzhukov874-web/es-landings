@@ -137,6 +137,9 @@ header.top{position:sticky; top:0; z-index:50; background:rgba(255,255,255,.92);
 /* form card */
 .form-card{background:#fff; border:2px solid var(--accent); border-radius:18px; padding:18px; color:var(--ink); box-shadow:var(--shadow)}
 .form-card h3{margin-bottom:2px; font-size:18px}
+.howq{display:flex; align-items:center; justify-content:space-between; width:100%; background:none; border:none; padding:0 0 8px; margin:0; font:inherit; font-weight:800; font-size:18px; color:var(--ink); cursor:pointer; text-align:left}
+.howq .chev{font-size:16px; color:var(--accent); transition:transform .25s} .howq[aria-expanded="true"] .chev{transform:rotate(180deg)}
+.steps4[hidden]{display:none}
 .form-card .sub{color:var(--muted); font-size:13.5px; margin-bottom:12px}
 .inp{width:100%; padding:14px 15px; border:1.5px solid #cfd8e3; border-radius:12px; font-size:16px; font-family:inherit; outline:none; margin-bottom:10px;
   transition:border-color .15s, box-shadow .15s}
@@ -311,7 +314,7 @@ body.free .disc,body:not(.free) .nodisc{display:none}
         <div class="product-card">
           <span class="disc-ribbon disc"></span>
           <img src="../../img/real-omni-cardital.webp" alt="Cardital" width="200" height="268" fetchpriority="high" decoding="async">
-          <div><span class="ribbon">Gratis</span><div class="shotcap">Este es el envase original que te traerá el mensajero: precinto, número de lote y fecha de caducidad.</div></div>
+          <div><span class="ribbon">1 envase de regalo</span><div class="shotcap">Este es el envase original que te traerá el mensajero: precinto, número de lote y fecha de caducidad.</div></div>
         </div>
       </div>
         <div class="scarcity" id="scarcity">
@@ -328,30 +331,30 @@ body.free .disc,body:not(.free) .nodisc{display:none}
         <h1>Cardital® — la única web oficial del fabricante en España</h1>
         <p class="sub-h">Cardital directo del fabricante: sin pago por adelantado, pagas al mensajero al recibir.</p>
         <div class="price-box">
-          <span class="price-new">1 ud. GRATIS</span>
+          <span class="price-new">+1 envase DE REGALO</span>
           <span class="price-old"></span>
           <span class="save-badge disc"></span>
         </div>
-        <p class="pricenote">Promoción del fabricante: el primer envase gratis, solo se paga el envío.</p>
+        <p class="pricenote">Promoción del fabricante: un envase de regalo con el pedido. El asesor te confirmará el precio por teléfono.</p>
 
         <div class="form-card">
           <form class="order-form" autocomplete="on" novalidate>
-            <h3>Pide el producto original</h3>
-            <ol class="steps4"><li>Dejas tu nombre y tu teléfono</li><li>Un asesor te llama y confirma dirección y hora de entrega; sin datos de tarjeta</li><li>El mensajero te trae el paquete en 1-3 días</li><li>Revisas el paquete al recibirlo y pagas al mensajero</li></ol>
+            <button type="button" class="howq" aria-expanded="false">¿Cómo hacer el pedido?<span class="chev">▾</span></button>
+            <ol class="steps4" hidden><li>Dejas tu nombre y tu teléfono</li><li>Un asesor te llama y confirma dirección y hora de entrega; sin datos de tarjeta</li><li>El mensajero te trae el paquete en 1-3 días</li><li>Revisas el paquete al recibirlo y pagas al mensajero</li></ol>
             <input class="inp" type="text" name="name" placeholder="Nombre y apellidos" autocomplete="name">
             <div class="phone-field"><span class="p48">🇪🇸 +34</span><input class="inp" type="tel" name="phone" placeholder="612 34 56 78" inputmode="numeric" autocomplete="tel"></div>
             <p class="ph-err">Introduce un número de teléfono válido</p>
             <p class="phonewhy">El número es necesario para la llamada de confirmación. Solo lo ven el vendedor, el servicio de confirmación de pedidos y el mensajero.</p>
             <input type="hidden" name="kw" value="es-omni-cardital">
-            <button class="btn btn-primary btn-cta" type="submit">RECIBIR GRATIS</button>
+            <button class="btn btn-primary btn-cta" type="submit">PEDIR CON REGALO</button>
             <p class="today-line">🛒 Hoy ya han pedido <b class="todayN">—</b> personas</p>
-            <p class="form-note">Pagas solo el envío — al recibirlo</p>
+            <p class="form-note">Pago al recibir el paquete; el envase de regalo llega en el mismo paquete</p>
           </form>
           <div class="ok-msg"><div class="ok-big"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6L9 17l-5-5"/></svg></div>
             <b>¡Gracias! Hemos recibido tu pedido.</b><p class="ok-when"></p><p class="ok-keep">🔔 Ten el teléfono a mano y responde a la llamada.</p></div>
         </div>
         <div class="sig">
-          <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="6" width="20" height="13" rx="2"/><path d="M2 10h20M6 15h3"/></svg>Producto<br>gratis</div>
+          <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="6" width="20" height="13" rx="2"/><path d="M2 10h20M6 15h3"/></svg>Envase<br>de regalo</div>
           <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 7h11v9H3zM14 10h4l3 3v3h-7z"/><circle cx="7" cy="18" r="1.6"/><circle cx="17" cy="18" r="1.6"/></svg>Mensajero<br>1-3 días</div>
           <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="6"/><path d="M20 20l-4.5-4.5M9 11l1.5 1.5L13.5 9"/></svg>Lo compruebas<br>antes de pagar</div>
           <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg>El asesor<br>te llama</div>
@@ -549,7 +552,7 @@ body.free .disc,body:not(.free) .nodisc{display:none}
           <div class="eyebrow" style="color:#7fb0ff">La única web oficial del fabricante</div>
           <h2>Pide el Cardital® original</h2>
           <p class="muted" style="font-size:14.5px">Rellena el formulario: un asesor te llamará en unos minutos para confirmar la dirección y la fecha de entrega. Sin pago por adelantado.</p>
-          <div class="price-box"><span class="price-new">1 ud. GRATIS</span><span class="price-old"></span><span class="save-badge disc"></span></div>
+          <div class="price-box"><span class="price-new">+1 envase DE REGALO</span><span class="price-old"></span><span class="save-badge disc"></span></div>
           <ul class="perks">
             <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>Pago solo al recibirlo</li>
             <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>Lo compruebas antes de pagar</li>
@@ -559,16 +562,16 @@ body.free .disc,body:not(.free) .nodisc{display:none}
         </div>
         <div class="form-card">
           <form class="order-form" autocomplete="on" novalidate>
-            <h3>Pide el producto original</h3>
-            <ol class="steps4"><li>Dejas tu nombre y tu teléfono</li><li>Un asesor te llama y confirma dirección y hora de entrega; sin datos de tarjeta</li><li>El mensajero te trae el paquete en 1-3 días</li><li>Revisas el paquete al recibirlo y pagas al mensajero</li></ol>
+            <button type="button" class="howq" aria-expanded="false">¿Cómo hacer el pedido?<span class="chev">▾</span></button>
+            <ol class="steps4" hidden><li>Dejas tu nombre y tu teléfono</li><li>Un asesor te llama y confirma dirección y hora de entrega; sin datos de tarjeta</li><li>El mensajero te trae el paquete en 1-3 días</li><li>Revisas el paquete al recibirlo y pagas al mensajero</li></ol>
             <input class="inp" type="text" name="name" placeholder="Nombre y apellidos" autocomplete="name">
             <div class="phone-field"><span class="p48">🇪🇸 +34</span><input class="inp" type="tel" name="phone" placeholder="612 34 56 78" inputmode="numeric" autocomplete="tel"></div>
             <p class="ph-err">Introduce un número de teléfono válido</p>
             <p class="phonewhy">El número es necesario para la llamada de confirmación. Solo lo ven el vendedor, el servicio de confirmación de pedidos y el mensajero.</p>
             <input type="hidden" name="kw" value="es-omni-cardital">
-            <button class="btn btn-primary btn-cta" type="submit">RECIBIR GRATIS</button>
+            <button class="btn btn-primary btn-cta" type="submit">PEDIR CON REGALO</button>
             <p class="today-line">🛒 Hoy ya han pedido <b class="todayN">—</b> personas</p>
-            <p class="form-note">Pagas solo el envío — al recibirlo</p>
+            <p class="form-note">Pago al recibir el paquete; el envase de regalo llega en el mismo paquete</p>
           </form>
           <div class="ok-msg"><div class="ok-big"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6L9 17l-5-5"/></svg></div>
             <b>¡Gracias! Hemos recibido tu pedido.</b><p class="ok-when"></p><p class="ok-keep">🔔 Ten el teléfono a mano y responde a la llamada.</p></div>
@@ -589,7 +592,7 @@ body.free .disc,body:not(.free) .nodisc{display:none}
 
 <script>
 (function(){
-  var WORKER='https://pilot-leads.bnsshub.workers.dev', KW='es-omni-cardital', KEYWORD='cardital', BTN='RECIBIR GRATIS';
+  var WORKER='https://pilot-leads.bnsshub.workers.dev', KW='es-omni-cardital', KEYWORD='cardital', BTN='PEDIR CON REGALO';
   if(''==='') document.body.classList.add('free');
   var qs=new URLSearchParams(location.search);
   // click-id из трекера: основной параметр cid; запасные — субы сетей и gclid Google
@@ -632,6 +635,8 @@ body.free .disc,body:not(.free) .nodisc{display:none}
 
 
   // --- FAQ ---
+  // «Как заказать?» — шаги заказа раскрываются по клику (17.09)
+  Array.prototype.forEach.call(document.querySelectorAll('.howq'),function(b){ b.addEventListener('click',function(){ var ol=b.nextElementSibling, o=b.getAttribute('aria-expanded')==='true'; b.setAttribute('aria-expanded',o?'false':'true'); if(ol) ol.hidden=o; }); });
   document.querySelectorAll('.q button').forEach(function(btn){
     btn.addEventListener('click',function(){ var q=btn.parentElement, a=q.querySelector('.ans');
       if(q.classList.contains('open')){ q.classList.remove('open'); a.style.maxHeight=null; }
