@@ -411,7 +411,7 @@ body.free .disc,body:not(.free) .nodisc{display:none}
 <div class="wrap" style="margin-top:18px">
   <!-- 14.10: траст-блок «одобрен / доказано / без противопоказаний / рекомендуют» (просьба пользователя: до этого все блоки были про доставку и подделки) -->
   <div class="apr">
-    <div><svg viewBox="0 0 28 28" fill="none" stroke="#b98900" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3l9 3.5v6c0 5.5-3.8 9.7-9 11.5-5.2-1.8-9-6-9-11.5v-6L14 3z"/><path d="M9.5 14l3 3 6-6"/></svg><div><b>Probado y aprobado por el Ministerio de Salud</b><span>Y por miles de clientes satisfechos en todo el país</span></div></div>
+    <div><svg viewBox="0 0 28 28" fill="none" stroke="#b98900" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3l9 3.5v6c0 5.5-3.8 9.7-9 11.5-5.2-1.8-9-6-9-11.5v-6L14 3z"/><path d="M9.5 14l3 3 6-6"/></svg><div><b>Probado y aprobado por el Ministerio de Sanidad</b><span>Y por miles de clientes satisfechos en todo el país</span></div></div>
     <div><svg viewBox="0 0 28 28" fill="none" stroke="#b98900" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M11 3h6M12 3v7l-6 11a2 2 0 001.8 3h12.4a2 2 0 001.8-3l-6-11V3"/><path d="M9 17h10"/></svg><div><b>Eficacia científicamente probada</b><span>Avalada por estudios y la experiencia de uso</span></div></div>
     <div><svg viewBox="0 0 28 28" fill="none" stroke="#b98900" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 23C5 11 13 5 24 5c0 11-6 19-18 19"/><path d="M5 23l9-9"/></svg><div><b>Sin contraindicaciones</b><span>No tiene efectos secundarios</span></div></div>
     <div><svg viewBox="0 0 28 28" fill="none" stroke="#b98900" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M8 13v10H4V13h4z"/><path d="M8 13l5-9c1.5 0 2.5 1 2.5 2.5V11h6a2 2 0 012 2.3l-1.4 7A2 2 0 0120 22H8"/></svg><div><b>El 90 % lo recomienda</b><span>A amigos y familiares según encuesta a clientes</span></div></div>
@@ -423,7 +423,7 @@ body.free .disc,body:not(.free) .nodisc{display:none}
   <div class="certs">
     <button class="cert" type="button" data-i="0"><img src="../../img/cert1.webp" alt="" loading="lazy" width="620" height="930"><span class="txt"><span class="flag">🇪🇸</span><span class="t">Venta directa</span><span class="rule"></span><span class="p">Los pedidos los atiende el servicio de atención al cliente del propio fabricante. Cada pedido se confirma por teléfono antes del envío.</span><span class="prod">Cardiotonus II®</span></span></button>
     <button class="cert" type="button" data-i="1"><img src="../../img/cert2.webp" alt="" loading="lazy" width="620" height="930"><span class="txt"><span class="flag">🇪🇸</span><span class="t">Embalaje original</span><span class="rule"></span><span class="p">Cada paquete sale con el precinto del fabricante y su número de lote. Sin intermediarios y sin revendedores.</span><span class="prod">Cardiotonus II®</span></span></button>
-    <button class="cert" type="button" data-i="2"><img src="../../img/cert3.webp" alt="" loading="lazy" width="620" height="930"><span class="txt"><span class="flag">🇪🇸</span><span class="t">Garantía del vendedor</span><span class="rule"></span><span class="p">Usted revisa el paquete en el momento de la entrega y paga solo después de comprobarlo. Puede rechazarlo sin ningún coste.</span><span class="prod">Cardiotonus II®</span></span></button>
+    <button class="cert" type="button" data-i="2"><img src="../../img/cert3.webp" alt="" loading="lazy" width="620" height="930"><span class="txt"><span class="flag">🇪🇸</span><span class="t">Garantía del vendedor</span><span class="rule"></span><span class="p">Revisas el paquete en el momento de la entrega y pagas solo después de comprobarlo. Puedes rechazarlo sin ningún coste.</span><span class="prod">Cardiotonus II®</span></span></button>
   </div>
 </div>
 <div class="cert-lb" id="certLb" hidden><button class="cert-x" type="button" aria-label="×">×</button><div class="cert-big"></div></div>
@@ -754,7 +754,7 @@ body.free .disc,body:not(.free) .nodisc{display:none}
   try{ var st=+localStorage.getItem('lp_stock'); if(st>6&&st<stock) stock=st; }catch(e){}   // остаток не растёт при перезагрузке
   function rs(){ sn.textContent=stock; sn2.textContent=stock; sb.style.width=Math.max(6,(stock/stockMax)*100)+'%'; try{ localStorage.setItem('lp_stock',stock); }catch(e){} }
   rs();
-  var L={"cc": "+34", "phMin": 9, "phMax": 9, "ph0": false, "fem": "a$", "t1m": "acaba de hacer un pedido", "t1f": "acaba de hacer un pedido", "t2m": "acaba de pedir 2 unidades", "t2f": "acaba de pedir 2 unidades", "agoMin": " min", "agoH": " h", "agoY": "ayer", "agoD": " días", "names": ["María", "Antonio", "Laura", "Manuel", "Ana", "José", "Marta", "Francisco", "Lucía", "Javier", "Elena", "David", "Rosa", "Carlos", "Cristina", "Miguel", "Sara", "Alejandro", "Paula", "Sergio"], "cities": ["Madrid", "Barcelona", "Valencia", "Sevilla", "Zaragoza", "Málaga", "Murcia", "Palma", "Las Palmas de Gran Canaria", "Bilbao", "Alicante", "Córdoba", "Valladolid", "Vigo", "Gijón", "Granada", "A Coruña", "Vitoria-Gasteiz", "Elche", "Oviedo"]};   // локаль тостов/дат/телефона (генерится сборкой из i18n)
+  var L={"cc": "+34", "phMin": 9, "phMax": 9, "ph0": false, "fem": "a$", "t1m": "acaba de hacer un pedido", "t1f": "acaba de hacer un pedido", "t2m": "acaba de pedir 2 unidades", "t2f": "acaba de pedir 2 unidades", "agoMin": "hace {n} min", "agoH": "hace {n} h", "agoY": "ayer", "agoD": "hace {n} días", "names": ["María", "Antonio", "Laura", "Manuel", "Ana", "José", "Marta", "Francisco", "Lucía", "Javier", "Elena", "David", "Rosa", "Carlos", "Cristina", "Miguel", "Sara", "Alejandro", "Paula", "Sergio"], "cities": ["Madrid", "Barcelona", "Valencia", "Sevilla", "Zaragoza", "Málaga", "Murcia", "Palma", "Las Palmas de Gran Canaria", "Bilbao", "Alicante", "Córdoba", "Valladolid", "Vigo", "Gijón", "Granada", "A Coruña", "Vitoria-Gasteiz", "Elche", "Oviedo"]};   // локаль тостов/дат/телефона (генерится сборкой из i18n)
   var NAMES=L.names, CITIES=L.cities;
   function drop(){
     if(stock>6){
@@ -801,8 +801,9 @@ body.free .disc,body:not(.free) .nodisc{display:none}
   var AGO=[14,42,96,180,260,420];   // первые шесть — свежие, дальше растёт плавно (отзывов теперь 72)
   Array.prototype.forEach.call(document.querySelectorAll('.ago'),function(el){
     var i=+el.getAttribute('data-i'), m=(i<AGO.length?AGO[i]:Math.round(600+i*i*3.2+i*180)), t;
-    if(m<60) t=m+L.agoMin; else if(m<1440) t=Math.round(m/60)+L.agoH;
-    else if(m<2880) t=L.agoY; else t=Math.round(m/1440)+L.agoD;
+    var agoF=function(n,s){return s.indexOf('{n}')>=0?s.replace('{n}',n):n+s;};   // «vor {n} Min.» / «{n} min temu»
+    if(m<60) t=agoF(m,L.agoMin); else if(m<1440) t=agoF(Math.round(m/60),L.agoH);
+    else if(m<2880) t=L.agoY; else t=agoF(Math.round(m/1440),L.agoD);
     el.textContent=t;
   });
 
